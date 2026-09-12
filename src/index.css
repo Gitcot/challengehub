@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: var(--theme-primary, #0C3C2E);
+  --color-accent: var(--theme-accent, #E2A336);
+  --color-bg-base: var(--theme-bg, #FDFBF7);
+  --color-text-main: var(--theme-text, #0C3C2E);
+  --color-surface: #FFFFFF;
+  --color-text-muted: #6A736D;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: Inter, Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg-base);
+  position: relative;
+  overflow-x: hidden;
+}
